@@ -170,7 +170,7 @@ function EnterNewNote({
   }
   function Cancel() {
     if(titleV || textV){
-    let confirmCancel = window.confirm('Do you sure you want to Cancel this')
+    let confirmCancel = window.confirm('Are you sure you want to cancel this?')
     confirmCancel && stagesCancel()
     }else{
       stagesCancel()

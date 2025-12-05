@@ -115,7 +115,7 @@ export default function LefttList({
 
   // عمل حذف للملاحظة المحددة و لكن قبل ذالك اعطاء خيار تأكيد او الغاء في حالة ظغط حذف بالغلط
   function DeleteOne(id) {
-    let confirmDlt = window.confirm("Do you sure you want to delete this");
+    let confirmDlt = window.confirm("Are you sure you want to delete this?");
     if (confirmDlt) {
       const newSaveNote = notes;
       newSaveNote.splice(id, 1);
@@ -128,7 +128,7 @@ export default function LefttList({
 
   return (
     <DivParentList>
-      <Logo href="/">ORANIOM NOTES</Logo>
+      <Logo href="/">NOTES</Logo>
       <ParentList>
         {notes.map((titleNote, id) => (
           <NameNotes
